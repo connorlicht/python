@@ -1,4 +1,4 @@
-class Television():
+class Television:
     """
     A class representing actions of a television.
     """
