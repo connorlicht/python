@@ -8,9 +8,15 @@ class Test:
     
     def setup_method(self) -> None:
         """
-        Method to setup the test fixture for the Television class.
+        Method to setup the test for the Television class.
         """
         self.tv = Television()
+        
+    def teardown_method(self) -> None:
+        """
+        Method to teardown the test for the Television class.
+        """
+        del self.tv
     
     def test__init__(self) -> None:
         """
